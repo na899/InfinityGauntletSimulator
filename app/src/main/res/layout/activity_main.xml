@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collect infinity stones"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:onClick="cis"
+        />
+
+    <TextView
+        android:id="@+id/stoneOb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="-------------------------------------------"
+        android:layout_below="@id/collect"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+    <TextView
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="List of Infinity stones collected"
+        android:layout_below="@id/stoneOb"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/PS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Power stone"
+        android:background="@color/White"
+        android:textColor="@color/purple"
+        android:layout_below="@id/List"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"/>
+    <TextView
+        android:id="@+id/PSc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0"
+        android:background="@color/White"
+        android:textColor="#800080"
+        android:layout_toRightOf="@id/PS"
+        android:layout_below="@+id/List"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"/>
+    <TextView
+        android:id="@+id/SpS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Space stone"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/PS"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/White"/>
+
+    <TextView
+        android:id="@+id/SpSc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PS"
+        android:layout_toRightOf="@id/PS"
+        android:layout_toEndOf="@+id/PS"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:background="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/blue" />
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Time stone"
+        android:background="@color/White"
+        android:textColor="@color/green"
+        android:layout_below="@+id/SpS"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tsc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpS"
+        android:layout_toEndOf="@+id/PS"
+        android:layout_toRightOf="@id/PS"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:background="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/green" />
+    <TextView
+        android:id="@+id/rs"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Reality stone"
+        android:textColor="@color/red"
+        android:layout_below="@+id/ts"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/White"/>
+
+    <TextView
+        android:id="@+id/rsc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ts"
+        android:layout_toEndOf="@+id/ts"
+        android:layout_toRightOf="@id/ts"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:background="@color/White"/>
+    <TextView
+        android:id="@+id/ss"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Soul stone"
+        android:textColor="@color/orange"
+        android:layout_below="@+id/rs"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/White"/>
+
+    <TextView
+        android:id="@+id/ssc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rs"
+        android:layout_toRightOf="@id/rs"
+        android:layout_toEndOf="@+id/rs"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:background="@color/White"/>
+    <TextView
+        android:id="@+id/ms"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Mind stone"
+        android:textColor="@color/yellow"
+        android:layout_below="@+id/ss"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/White"/>
+
+    <TextView
+        android:id="@+id/msc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ss"
+        android:layout_toRightOf="@id/ss"
+        android:layout_toEndOf="@+id/ss"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:background="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/sm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:text="All six stones collected!!!
+Click Reset to collect again."
+        android:textAllCaps="true"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp"
+        android:text="Reset"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
